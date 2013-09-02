@@ -59,7 +59,7 @@ module X12
       if MS_DEVICES.find{|i| i == base_name}
         file_name = File.join(File.dirname, "#{base_name}_.xml")
       end
-      file_location = File.join(File.dirname(__FILE__), "../../misc", file_name) 
+      file_location = File.join(file_name) 
       
       # Read and parse the definition
       str = File.open(file_location, 'r').read
